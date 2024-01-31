@@ -1,0 +1,680 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Tinos:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  margin: 0px 165px;
+}
+.header {
+  background-image: url(img/backgrond_head.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_line {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav_item {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 25px;
+  transition: color 0.3s linear;
+}
+.nav_item:hover {
+  color: #ff7400;
+}
+.cart {
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+  height: 50px;
+  position: relative;
+}
+.cart img {
+  position: absolute;
+  top: 18px;
+  right: 27px;
+}
+.number a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.3s linear;
+}
+.number a:hover {
+  color: #ff7400;
+}
+.phone_text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.phone-holder {
+  display: flex;
+  align-items: center;
+}
+.btn a {
+  background: #ff7400;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 16px;
+  transition: 0.3s linear;
+}
+.btn a:hover {
+  background: #342b24;
+  color: #ff7400;
+}
+.header-menu {
+  display: none;
+}
+.header-down {
+  position: relative;
+}
+.header-title {
+  position: absolute;
+  left: 0;
+  margin-top: 205px;
+  color: #d67e35;
+  font-family: Tinos;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+.header-subtitle {
+  color: #d67e35;
+  font-family: Tinos;
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.header-2-subtitle {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+.header-2-subtitle::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 61px;
+  background-color: #fff;
+  top: 172px;
+  left: 85px;
+}
+.header-2-subtitle::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 61px;
+  background-color: #fff;
+  top: 172px;
+  left: 335px;
+}
+.header-button {
+  background: #ff7400;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 28px;
+  transition: 0.3s linear;
+}
+.header-button:hover {
+  background: #342b24;
+  color: #ff7400;
+}
+.cards-holder {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  width: 349px;
+  margin-right: 31px;
+  background-color: #fff;
+  margin-top: -107px;
+  padding: 10px 10px;
+}
+.card-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 31px;
+}
+.card-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+  font-family: Tinos;
+  font-size: 26px;
+  font-weight: 400;
+}
+.card-title span {
+  color: #bc9060;
+}
+.card-desc {
+  text-align: center;
+  color: #656363;
+  font-family: Tinos;
+  font-size: 26px;
+  font-weight: 400;
+}
+.history {
+  margin-top: 166px;
+  padding-bottom: 122px;
+}
+.history-title {
+  color: #000;
+  font-family: Tinos;
+  font-size: 54px;
+  font-weight: 400;
+  max-width: 444px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.history-title span {
+  color: #d67e34;
+}
+.history-desc {
+  color: #656363;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 444px;
+}
+.food-humber {
+  display: flex;
+  max-width: 444px;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.number-item {
+  text-align: center;
+  color: #bc9060;
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight: 400;
+}
+.number-item span {
+  display: block;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.history-holder {
+  display: flex;
+  justify-content: space-around;
+}
+.black-block {
+  background-image: url(img/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0px;
+}
+.left-title {
+  color: #d67e34;
+  font-family: Tinos;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.left-text {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.right-btn {
+  background: #ff7400;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 16px;
+  transition: 0.3s linear;
+}
+.right-btn:hover {
+  background: #342b24;
+  color: #ff7400;
+}
+.block-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dishes {
+  padding-bottom: 152px;
+}
+.dishes-title {
+  color: #000;
+  font-family: Tinos;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 132px;
+  margin-bottom: 139px;
+}
+.dishes-title span {
+  color: #d67e34;
+  font-family: Tinos;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.burgers {
+  display: flex;
+  justify-content: center;
+}
+.burg-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.text-burger {
+  color: #000;
+  font-family: Tinos;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+.burger-img {
+  margin-right: 20px;
+}
+.menu {
+  background-image: url(img/BG_menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 226px;
+}
+.menu-title {
+  color: #fff;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  font-family: Tinos;
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 98px;
+  padding-bottom: 138px;
+}
+.menu-block {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.menu-items {
+  background-color: #fff;
+  text-align: center;
+  width: 350px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.recom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #d67e34;
+  padding: 7px;
+}
+.item-img {
+  position: relative;
+}
+.img-price {
+  position: absolute;
+  top: 125px;
+  left: 190px;
+}
+.price-text {
+  position: absolute;
+  bottom: 35px;
+  right: 90px;
+  color: #fff;
+  font-family: Cookie;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.item-title {
+  color: #000;
+  font-family: Tinos;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+.item-text {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.item-btn {
+  margin-top: 20px;
+}
+.item-button {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #d67e34;
+  padding: 14px 67px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s linear;
+}
+.item-button:hover {
+  background: #342b24;
+  color: #ff7400;
+}
+.comment {
+  background-color: #e5e5e5;
+  padding-top: 104px;
+  padding-bottom: 139px;
+}
+.comment-text {
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.comment-img {
+  text-align: center;
+  margin-bottom: 17px;
+}
+.com-type {
+  text-align: center;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.com-name {
+  text-align: center;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.galery-title {
+  text-align: center;
+  color: #000;
+  font-family: Tinos;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+.galery-title span {
+  color: #d67e34;
+  font-family: Tinos;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.galery-content {
+  display: flex;
+  justify-content: center;
+}
+.galery-l {
+  margin-right: 20px;
+}
+.gal-down,
+.gal-up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.cook {
+  padding-bottom: 100px;
+}
+.cook-title {
+  text-align: center;
+  color: #000;
+  font-family: Tinos;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 100px;
+  margin-bottom: 107px;
+}
+.cook-title span {
+  color: #d67e34;
+  font-family: Tinos;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cook-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.footer {
+  background-image: url(img/bg-f.svg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1400px) {
+  .header-title {
+    position: static;
+  }
+  .header-2-subtitle::before,
+  .header-2-subtitle::after {
+    content: none;
+  }
+  .cards-holder {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 27px;
+  }
+  .card {
+    max-width: 290px;
+    height: 276px;
+    margin-top: -120px;
+    padding-bottom: 25px;
+    margin-bottom: 140px;
+  }
+  .history-holder {
+    display: block;
+    text-align: center;
+  }
+  .history-title,
+  .history-desc {
+    max-width: 100%;
+  }
+  .food-humber {
+    max-width: 100%;
+    display: block;
+    padding-bottom: 50px;
+  }
+  .block-holder {
+    display: block;
+  }
+  .left-title,
+  .left-text {
+    text-align: center;
+  }
+  .right {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .galery-content {
+    display: block;
+  }
+  .gal-i,
+  .gal-down,
+  .gal-up {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gal-i {
+    margin-bottom: 20px;
+  }
+  .gal-i {
+    width: 298.056px;
+    height: 368px;
+  }
+  .galery-l {
+    margin-right: 0;
+  }
+  .remove {
+    display: none;
+  }
+  .cook-content {
+    display: block;
+  }
+  .cook-content img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  .block {
+    display: block;
+  }
+  .menu-slide {
+    position: absolute;
+    top: 100px;
+    right: 172px;
+  }
+  .menu-list {
+    background: #342b24;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .disp {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .rem {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+  }
+  .header_line {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    margin: 0px 16px;
+  }
+  .header-title {
+    font-size: 30px;
+  }
+  .header-subtitle {
+    font-size: 40px;
+  }
+  .header-2-subtitle {
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+  .burgers {
+    display: block;
+  }
+  .burger-img {
+    width: 100vw;
+    margin-left: -17px;
+  }
+  .text-burger {
+    text-align: center;
+    width: 167px;
+    font-size: 22px;
+  }
+  .burg-item span {
+    display: none;
+  }
+  .history-title,
+  .history-title span,
+  .menu-title,
+  .menu-title span,
+  .dishes-title,
+  .dishes-title span,
+  .cook-title,
+  .cook-title span,
+  .galery-title,
+  .galery-title span {
+    font-size: 40px;
+  }
+  .card-desc {
+    font-size: 22px;
+  }
+  .left-title {
+    font-size: 30px;
+  }
+  .menu-slide {
+    right: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .price-text {
+    right: 30px;
+  }
+}
