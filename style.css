@@ -18,7 +18,7 @@ img {
 .header {
   background-image: url(img/backgrond_head.jpg);
   height: 100vh;
-  min-height: 700px;
+  min-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -629,6 +629,9 @@ img {
 @media (max-width: 767px) {
   .container {
     margin: 0px 16px;
+  }
+  .header {
+    height: 800px;
   }
   .header-title {
     font-size: 30px;
